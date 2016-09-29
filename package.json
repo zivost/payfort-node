@@ -1,0 +1,22 @@
+{
+  "name": "payfort-node",
+  "version": "1.0.0",
+  "description": "Unofficial payfort node client",
+  "main": "payfort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rohithzr/payfort-node.git"
+  },
+  "author": "Rohit Hazra <rohithzr@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rohithzr/payfort-node/issues"
+  },
+  "homepage": "https://github.com/Rohithzr/payfort-node#readme",
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}
