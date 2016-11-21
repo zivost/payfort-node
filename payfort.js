@@ -28,4 +28,4 @@ var purchaseUrl = function(client, data, callback){
 };
 
 exports.CreateClient = createClient;
-exports.PurchaseUrl = purchaseUrl;
+exports.Purchase = purchaseUrl;
