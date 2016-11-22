@@ -20,6 +20,7 @@ var createSignature = function(passphrase, object){
       signatureText = signatureText+(k + '=' + object[k]);
     }
     var signature = createHash(passphrase+signatureText+passphrase);
+    console.log(signature);
     return signature;
 };
 

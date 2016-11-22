@@ -16,6 +16,7 @@ var purchaseUrl = function(client, data, callback){
     data.access_code = client.access_code;
     data.merchant_identifier = client.merchant_identifier;
     data.signature = utility.CreateSignature(client.passphrase, data);
+    console.log(data);
     request.post({
         url : urls.devpaymentPage, 
         form : data
