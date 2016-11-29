@@ -14,11 +14,16 @@ And here's some code! :+1:
 
 ```javascript
 // create client
-var payfortClient = payfort.CreateClient("dev", {
+var client = payfort.create_client("dev", {
 	access_code : "your_access_code",
 	merchant_identifier : "your_merchant_identifier",
 	passphrase : "your_passphrase"
+	purchase_url : "send this only to override default urls"
 });
+// default URLs
+// Authorization/ Purchase URLs
+// Test Environment URL: https://sbcheckout.payfort.com/FortAPI/paymentPage
+// Production Environment URL: https://checkout.payfort.com/FortAPI/paymentPage
 ```
 
 ```javascript
@@ -37,7 +42,7 @@ var purchaseData = {
 
 ```javascript
 //call payfort API
-payfort.Purchase(payfortClient, purchaseData, function(err, response){
+payfort.send_request(client, purchaseData, function(err, response){
 	if(err){
     	//error stuff
     }

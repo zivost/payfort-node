@@ -5,7 +5,7 @@ var createHash = function(string){
     return hash;
 };
 
-var createSignature = function(passphrase, object){
+var create_signature = function(passphrase, object){
     var signatureText = "";
     var keys = [];
     for (var eachKey in object) {
@@ -32,4 +32,4 @@ function compare(a, b){
   return 0;
 }
 
-exports.CreateSignature = createSignature;
+exports.create_signature = create_signature;
