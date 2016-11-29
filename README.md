@@ -1,9 +1,12 @@
 # Payfort Payment API
 
+#### Note: Verion 2 is not compatible with version 1. Please Update your code. Sorry! for the inconvinience. 
+
 Basic useful feature list:
 
  * Allows you to make Payfort Credit/Debit card Payment API
  * PayAtHome method not supported
+ * If you have experience with SOAP Client on Node.JS then please contact me we can do payfort-PayAtHOme API for this module.
 
 ## Install
 
@@ -14,7 +17,7 @@ And here's some code! :+1:
 
 ```javascript
 // create client
-var client = payfort.create_client("dev", {
+var client = payfort.create_client("development", {
 	access_code : "your_access_code",
 	merchant_identifier : "your_merchant_identifier",
 	passphrase : "your_passphrase"
@@ -30,7 +33,7 @@ var client = payfort.create_client("dev", {
 // purchase data to be sent to payfort
 var purchaseData = {
   "amount": data.amount,
-  "command" : "PURCHASE",
+  "command" : "PURCHASE", // AUTHORIZATION
   "currency": data.currency,
   "customer_email": data.email,
   "customer_name": data.name,
@@ -49,3 +52,4 @@ payfort.send_request(client, purchaseData, function(err, response){
     //handle response
 })
 ```
+
