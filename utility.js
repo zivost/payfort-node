@@ -1,7 +1,7 @@
 var crypto = require('crypto');
 
 var createHash = function(string){
-    var hash = crypto.createHash('sha256').update(string).digest('hex');
+    var hash = crypto.createHash('sha256').update(string, 'utf8').digest('hex');
     return hash;
 };
 
