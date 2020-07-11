@@ -1,5 +1,5 @@
 # Payfort Payment API
-
+## **** Not Maintained ****
 ## There seems to be some changes to payfort api which breaks the below method and forces to run the payments via client side. I am yet to find a fix, when I will i'll update the repo.
 
 Basic useful feature list:
